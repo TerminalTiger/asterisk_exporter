@@ -1,0 +1,13 @@
+[Unit]
+Description=Asterisk Exporter
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=root
+Group=root
+Type=simple
+ExecStart=/usr/local/bin/asterisk_exporter_amd64 -port 9110 -filter "Jio-7313658538"
+
+[Install]
+WantedBy=multi-user.target
