@@ -11,6 +11,14 @@ The Asterisk Exporter is a lightweight and efficient Prometheus exporter designe
    If you have multiple peers, use: ExecStart=/usr/local/bin/asterisk_exporter_amd64 -port 9110 -filter "peername1|peername2|peername3"
 6. systemctl start asterisk_exporter
 7. systemctl enable asterisk_exporter
+8. Add config to prometheus.yml file:
+
+  - job_name: 'asterisk_exporter'
+    scrape_interval: 30s
+    scrape_timeout: 30s
+    static_configs:
+    - targets: ['192.168.1.115:9110']
+
 
    
    
