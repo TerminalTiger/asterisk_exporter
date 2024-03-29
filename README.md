@@ -4,7 +4,7 @@ The Asterisk Exporter is a lightweight and efficient Prometheus exporter designe
 # How to use
 1. Download the latest binary release
 2. Copy this binary to /usr/local/bin
-3. Get your peers' names using the command # asterisk -rvx "sip show peers"
+3. Get your peers' names using the command asterisk -rvx "sip show peers"
 4. Copy the asterisk_exporter.service file to the /etc/systemd/system/ directory
 5. In the service file, change the peer's name with your actual peer's name (output of step 3)
    Modify this line in the service file: ExecStart=/usr/local/bin/asterisk_exporter_amd64 -port 9110 -filter "peername"
