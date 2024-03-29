@@ -13,12 +13,11 @@ The Asterisk Exporter is a lightweight and efficient Prometheus exporter designe
 7. systemctl enable asterisk_exporter
 8. Add config to prometheus.yml file:
 
-
-  - job_name: 'asterisk_exporter'
+        - job_name: 'asterisk_exporter'
     scrape_interval: 30s
     scrape_timeout: 30s
     static_configs:
-    - targets: ['asterisk_server_ip:9110']      
+    - targets: ['asterisk_server_ip:9110'] 
 
    
    
