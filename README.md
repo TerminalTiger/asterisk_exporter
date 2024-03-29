@@ -23,7 +23,7 @@ scrape_configs:
     scrape_interval: 15s
     scrape_timeout: 10s
 ```
- 
+9. import dashboard.json in grafana 
 
    
    
