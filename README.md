@@ -20,7 +20,7 @@ The Asterisk Exporter is a lightweight and efficient Prometheus exporter designe
     - targets: ['192.168.1.115:9110']
    
 ##
-<tab><tab>code/text here
+      code/text here
 
    
    
