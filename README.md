@@ -17,7 +17,8 @@ The Asterisk Exporter is a lightweight and efficient Prometheus exporter designe
     scrape_interval: 30s
     scrape_timeout: 30s
     static_configs:
-    - targets: ['asterisk_server_ip:9110'] 
+    - targets: ['asterisk_server_ip:9110']       
+ 
 
    
    
